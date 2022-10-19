@@ -61,8 +61,8 @@ body {
 }
 
 .search_btn {
-    width: 120px;
-    height: 50px;
+    min-width: 120px;
+    min-height: 50px;
     padding: 0 20px;
     background-color: #FFC93D;
     border: none;
