@@ -3,20 +3,20 @@ body {
 }
 
 .main {
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .wrapper {
-    width: 760px;
+    max-width: 760px;
     position: relative;
 }
 
 .container {
-    margin-left: 150px; 
+    margin-left: 20%; 
 }
 
 .search {
@@ -25,10 +25,13 @@ body {
 }
 
 .search_name {
-    width: 138px;
-    height: 50px;
+    max-height: 50px;
     position: absolute;
     left: 0;
+}
+
+.search_img {
+    min-width: 130px;
     font-size: 38px;
     font-weight: bold;
     color: rgb(20, 20, 20);
@@ -41,7 +44,7 @@ body {
 .search_input {
     box-sizing: border-box;
     width: 100%;
-    height: 50px;
+    max-height: 50px;
     padding: 10px; 
     font-size: 24px;
     border-radius: 10px;
@@ -76,12 +79,13 @@ body {
     margin-bottom: 10px;
 }
 
-.message_link, .platforms_link {
+.message_link,  .message_link:visited, .message_link:active, .message_link:hover,
+.platforms_link, .platforms_link:visited, .platforms_link:active, .platforms_link:hover {
     color: #0054b9;
 }
 
-.message_link:visited, .platforms_link:visited {
-    color: #0054b9;
+.platforms_linki {
+    font-size: 0;
 }
 
 .platforms {
@@ -95,7 +99,7 @@ body {
 }
 
 .platforms_li {
-    width: 49%;
+    min-width: 49%;
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -109,26 +113,24 @@ body {
 
 .footer {
     width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    margin-top: -40px;
 }
 
 .navbar {
     display: block;
-    width: 760px;
+    max-width: 760px;
     margin: 0 auto;
 }
 
 .navbar_ul {
-    margin-bottom: 20px;
+    min-height: 40px;
 }
 
 .navbar_li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 5%;
 }
 
-.navbar_link {
+.navbar_link, .navbar_link:visited, .navbar_link:active, .navbar_link:hover {
     color:rgb(150, 150, 150);
 }
